@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Visits;
-use App\Models\Department;
 use App\DTO\VisitDTO;
 use App\Repository\Interface\IVisitRepository;
 use App\Http\Requests\CreateVisit;
@@ -21,7 +20,7 @@ class VisitsController extends Controller
     {
         $visits = Visits::all();
 
-        return view('admins.showdepartment', ['visits' => $visits]);
+        return view('visits.showvisit', ['visits' => $visits]);
     }
 
     /**

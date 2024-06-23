@@ -71,11 +71,11 @@ Route::group(['prefix' => 'users'], function () {
     Route::get('/edit/{id}', [UsersController::class, 'edit'])->name('users.edit');
 });
 
-Route::group(['prefix' => 'surgeryco'], function () {
-    Route::get('/create', [SurgerycoController::class, 'create'])->name('surgeryco.create');
-    Route::post('/store', [SurgerycoController::class, 'store'])->name('surgeryco.store');
-    Route::get('/destroy/{id}', [SurgerycoController::class, 'destroy'])->name('surgeryco.destroy');
-    Route::get('/index', [SurgerycoController::class, 'index'])->name('surgeryco.index');
-    Route::post('/update{id}', [SurgerycoController::class, 'update'])->name('surgeryco.update');
-    Route::get('/edit/{id}', [SurgerycoController::class, 'edit'])->name('surgeryco.edit');
-});
+// Route::group(['prefix' => 'surgeryco'], function () {
+//     Route::get('/create', [SurgerycoController::class, 'create'])->name('surgeryco.create');
+//     Route::post('/store', [SurgerycoController::class, 'store'])->name('surgeryco.store');
+//     Route::get('/destroy/{id}', [SurgerycoController::class, 'destroy'])->name('surgeryco.destroy');
+//     Route::get('/index', [SurgerycoController::class, 'index'])->name('surgeryco.index');
+//     Route::post('/update{id}', [SurgerycoController::class, 'update'])->name('surgeryco.update');
+//     Route::get('/edit/{id}', [SurgerycoController::class, 'edit'])->name('surgeryco.edit');
+// });
